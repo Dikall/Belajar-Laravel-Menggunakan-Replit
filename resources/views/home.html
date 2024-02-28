@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Website Sederhana</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Memuat file CSS eksternal -->
+  </head>
+  <body>
+    <nav>
+      <ul class="snip1217">
+        <li class="current"><a href="home.html">Home</a></li>
+        <li><a href="profil.html">Profil</a></li>
+        <li><a href="akademik.html">Akademik</a></li>
+        <li style="float: right"><a onclick="keluar()">Logout</a></li>
+      </ul>
+    </nav>
+
+    <div class="imgpz" id="Home">
+      <img src="pzzz.png" alt="LOGO" class="logg" />
+      <div class="textweb">
+        <h2>Hi Welcome to My Website</h2>
+        <br></br>
+        <p>I`m Muhammad Radikal</p>
+      </div>
+    </div>
+    <script>
+      function keluar() {
+        if (confirm("Apakah anda yakin keluar website?")) {
+          location.replace("login.html");
+        }
+      }
+    </script>
+  </body>
+</html>
